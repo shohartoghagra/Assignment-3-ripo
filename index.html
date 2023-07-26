@@ -12,6 +12,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- tailwind customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'banner1-png': "url('./img/banner1.png')",
+            },
+          },
+        },
+      },
+    </script>
+
+
+
+
     <!-- Tailwind css cnd link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -38,8 +54,8 @@
   </head>
   <body class="font-family: 'Lato', sans-serif;">
     <header>
-      <nav class="max-auto px-5">
-       <div class="navbar bg-base-100  bg-[#F85559] rounded-full px-5">
+      <nav class="max-auto">
+       <div class="navbar bg-base-100  bg-[#F85559] lg:rounded-full px-10">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -64,17 +80,19 @@
 
 
 
-  <div class=" lg:gap-4 flex flex-col lg:flex-row items-center justify-center  flex-1">
+  <div class=" :gap-4 flex flex-col lg:flex-row items-center justify-center  flex-1">
     <img src="./images/logo.png" />
-    <h2 class=" text-4xl font-extrabold text-white">Fruit Burst</h2>
+    <h2 class=" lg:text-4xl lg:font-extrabold text-white">Fruit Burst</h2>
   </div>
   
   <div class="items-center flex flex-col lg:flex-row">
     <input
       type="text"
       placeholder="Search"
-      class="input input-bordered lg:px-10 flex-col w-auto"/>
-    <i class="fa-solid fa-magnifying-glass -ml-7"></i>
+      class="input input-bordered flex-col w-full"/>
+     
+        <button class="-ml-10 " > <i class="fa-solid fa-magnifying-glass text-xl"></i></button>
+    
   </div>
 
 
@@ -83,12 +101,12 @@
 </nav>
 
     <!-- banner section start from here -->
-<section class=" lg:my-20">
+<section class="my-5">
   <div class="carousel w-full">
-    <div id="slide1" class="carousel-item relative w-full ">
+    <div id="slide1" class="carousel-item relative w-full">
      <!-- slide-1 -->
       <div class="max-auto w-full relative">
-        <img src="./images/banner1.png" class=" w-full" />
+        <img src="./images/banner1.png" class=" w-full " />
     
         <div class="items-center absolute -mt-32 lg:-mt-60 lg:ml-96  lg:space-y-6">
           <h1 class="text-white text-center lg:font-extrabold lg:text-5xl lg:-mt-96 lg:ml-72">Exotic tastes at your <br> doorstep</h1>
@@ -107,8 +125,8 @@
 <!-- slide2-2   -->
     <div id="slide2" class="carousel-item relative w-full">
       
-      <div class="max-auto w-full relative">
-        <img src="./images/banner2.png" class=" w-full opacity-0." />
+      <div class="max-auto w-full relative ">
+        <img src="./images/banner2.png" class=" blur-none w-full backdrop-brightness-105." />
     
         <div class="items-center absolute -mt-32 lg:-mt-60 lg:ml-96  lg:space-y-6">
           <h1 class="text-white text-center lg:font-extrabold lg:text-5xl lg:-mt-96 lg:ml-72">Exotic tastes at your <br> doorstep</h1>
@@ -376,7 +394,7 @@
 </section>
 
 <!-- Meet the team section -->
-<section class="my-24 p-20 lg:mx-36 "style="background-image: url('./images/banner1.png');">
+<section class="my-24 p-20 lg:mx-36 "style="background-image: url('./images/banner1.png')">
 <div class="text-center  justify-around space-y-5 ">
   <h2 class="lg:text-5xl font-extrabold text-white">Meet the team section</h2>
 <p class="text-base font-medium text-white mb-5">Contrary to popular belief,is not simply random text. 
@@ -433,8 +451,6 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
 
 
 </main>
-
-
 
 
   </body>
