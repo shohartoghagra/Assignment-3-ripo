@@ -18,7 +18,7 @@
         theme: {
           extend: {
             backgroundImage: {
-              'banner1-png': "url('./img/banner1.png')",
+              'banner1-png': "url(')",
             },
           },
         },
@@ -32,8 +32,7 @@
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
       rel="stylesheet"
-      type="text/css"
-    />
+      type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google font lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,8 +77,7 @@
     </ul>
   </div>
 
-
-
+<!-- Navbar-Logo section -->
   <div class=" :gap-4 flex flex-col lg:flex-row items-center justify-center  flex-1">
     <img src="./images/logo.png" />
     <h2 class=" lg:text-4xl lg:font-extrabold text-white">Fruit Burst</h2>
@@ -487,7 +485,7 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
 
 <!-- Image items section -->
 <div class="flex p-10">
-<img src="./images/whychoose1.png" alt="">
+<img src="./images/whychoose1.png" class="w-full" alt="">
 </div>
 
 
@@ -501,7 +499,6 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
   </div>
   <p  class="text-base font-medium">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
   
-
   <!-- Second item-2 -->
   <div class=" flex  flex-1 items-center gap-5">
   <h3 class=" my-5text-base font-extrabold text-black  border-b-2 border-black outline-1 w-fit">Sustainable Practice</h3>
@@ -509,7 +506,6 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
   </div>
   <p  class="text-base font-medium">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
   
-
   <!-- Second item-3 -->
   <div class=" flex  flex-1 items-center gap-5">
     <h3 class=" my-5text-base font-extrabold text-black  border-b-2 border-black outline-1 w-fit">The Benefits Only</h3>
@@ -524,9 +520,40 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
 </div>
 </section>
 
-
 </main>
 
+<!-- footer section start from here -->
+<footer >
+
+<div class="footer footer-center py-24 bg-base-200 text-base-content rounded bg-black">
+  
+  <div class=" gap-4 flex flex-col lg:flex-row items-center justify-center  flex-1">
+    <img  src="./images/logo.png"/>
+    <h2 class="text-4xl font-extrabold text-white">Fruit Burst</h2>
+  </div>
+
+  <div class="grid grid-flow-dense lg:grid-flow-col gap-4">
+    <a class="link link-hover text-xl font-semibold text-white">Home</a> 
+    <a class="link link-hover text-xl font-semibold text-white">About Us</a> 
+    <a class="link link-hover text-xl font-semibold text-white">My Account</a>
+    <a class="link link-hover text-xl font-semibold text-white">All Fruits</a>
+    <a class="link link-hover text-xl font-semibold text-white">Support</a>
+  </div> 
+  
+    <div class="grid grid-cols-3 lg:grid-flow-col gap-4">
+      <a href=""><i class="fa-brands fa-twitter text-3xl text-white"></i></a>
+      <a href=""><i class="fa-brands fa-facebook text-3xl text-white"></i></a>
+      <a href=""><i class="fa-brands fa-youtube text-3xl text-white"></i></a>
+      <a href=""><i class="fa-brands fa-youtube text-3xl text-white"></i></a>
+      <a href=""><i class="fa-brands fa-instagram text-3xl text-white"></i></a>
+      <a href=""><i class="fa-brands fa-apple text-3xl text-white"></i></a>
+    </div>
+    <div>
+      <p class="text-3xl text-white flex-col"  >Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+    </div>
+  </div> 
+ 
+</footer>
 
   </body>
 </html>
