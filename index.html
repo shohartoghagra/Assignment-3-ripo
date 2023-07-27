@@ -51,9 +51,9 @@
  
   </head>
   <body class="font-family: 'Lato', sans-serif;">
-    <header>
-      <nav class="my-5 max-auto">
-       <div class="navbar bg-base-100  bg-[#F85559] rounded-full px-10">
+    <header class="container md:mx-auto my-5">
+    
+       <div class="navbar bg-[#F85559] rounded-full ">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -68,7 +68,7 @@
     
 
   <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
+    <ul class="menu menu-horizontal">
       <li><a class="text-xl text-white font-medium">Home</a></li>
       <li><a class="text-xl text-white font-medium">About Us</a></li>
       <li><a class="text-xl text-white font-medium">Shop</a></li>
@@ -78,23 +78,25 @@
 
 <!-- Navbar-Logo section -->
   <div class=" flex flex-col items-center justify-center lg:flex-row  flex-1">
-    <img src="./images/logo.png"/>
-    <h2 class=" text-base lg:text-4xl lg:font-bold text-white">Fruit Burst</h2>
+    <img class="hidden sm:block" src="./images/logo.png"/>
+    <h2 class=" hidden sm:block text-base lg:text-4xl lg:font-bold text-white">Fruit Burst</h2>
   </div>
   
-  <div class="items-center flex flex-col lg:flex-row ">
+  <div class=" sm:blolck relative items-center flex flex-col lg:flex-row">
     <input
       type="text"
       placeholder="Search"
-      class="input input-bordered flex-col w-full"/>
+      class="input input-bordered flex-col w-full hidden sm:block"/>
      
-        <button class="-ml-10 " > <i class="fa-solid fa-magnifying-glass text-xl "></i></button>
+        <div class="hidden sm:block absolute mt-0 md:ml-48">
+          <i class=" fa-solid fa-magnifying-glass  text-2xl "></i>
+        </div>
     
   </div>
 
 
 </div>
-</div>
+
 </nav>
 
     <!-- banner section start from here -->
@@ -105,10 +107,10 @@
       <div class="max-auto w-full relative">
         <img src="./images/banner1.png" class=" w-full " />
     
-        <div class="items-center absolute -mt-32 lg:-mt-60 lg:ml-96  lg:space-y-6">
+        <div class="items-center absolute -mt-32 ml-48 lg:-mt-28 lg:ml-72  lg:space-y-6">
           <h1 class="text-white text-center lg:font-extrabold lg:text-5xl lg:-mt-96 lg:ml-72">Exotic tastes at your <br> doorstep</h1>
-          <p class="text-center lg:font-medium lg:ml-40 text-white">We supply highly quality organic products</p>
-            <button class="btn btn bg-[#F85559] lg:m-60 lg:ml-96 text-center border-none  lg:text-base text-white">Shop Now</button>
+          <p class="text-center sm:font-medium lg:ml-40 text-white">We supply highly quality organic products</p>
+            <button class="btn btn bg-[#F85559] md:mr-50 sm:mb-5 lg:ml-96 text-center border-none  sm:text-base text-white">Shop Now</button>
         </div>
       </div>
 
@@ -119,16 +121,16 @@
     </div> 
 
 
-<!-- slide2-2   -->
+<!-- slide2-2   --> 
     <div id="slide2" class="carousel-item relative w-full">
       
       <div class="max-auto w-full relative ">
         <img src="./images/banner2.png" class=" blur-none w-full backdrop-brightness-105." />
     
-        <div class="items-center absolute -mt-32 lg:-mt-60 lg:ml-96  lg:space-y-6">
+        <div class="items-center absolute -mt-32 ml-48 lg:-mt-28 lg:ml-72  lg:space-y-6">
           <h1 class="text-white text-center lg:font-extrabold lg:text-5xl lg:-mt-96 lg:ml-72">Exotic tastes at your <br> doorstep</h1>
-          <p class="text-center lg:font-medium lg:ml-40 text-white">We supply highly quality organic products</p>
-            <button class="btn btn bg-[#F85559] lg:m-60 lg:ml-96 text-center border-none  lg:text-base text-white">Shop Now</button>
+          <p class="text-center sm:font-medium lg:ml-40 text-white">We supply highly quality organic products</p>
+          <button class="btn btn bg-[#F85559] md:mr-50 sm:mb-5 lg:ml-96 text-center border-none  sm:text-base text-white">Shop Now</button>
         </div>
       </div>
       <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -140,10 +142,10 @@
     <div id="slide3" class="carousel-item relative w-full">
       <div class="max-auto w-full relative">
         <img src="./images/banner3.png" class=" w-full opacity-0." />
-        <div class="items-center absolute -mt-32 lg:-mt-60 lg:ml-96  lg:space-y-6">
+        <div class="items-center absolute -mt-32 ml-48 lg:-mt-28 lg:ml-72  lg:space-y-6 ">
           <h1 class="text-white text-center lg:font-extrabold lg:text-5xl lg:-mt-96 lg:ml-72">Exotic tastes at your <br> doorstep</h1>
-          <p class="text-center lg:font-medium lg:ml-40 text-white">We supply highly quality organic products</p>
-            <button class="btn btn bg-[#F85559] lg:m-60 lg:ml-96 text-center border-none  lg:text-base text-white">Shop Now</button>
+          <p class="text-center sm:font-medium lg:ml-40 text-white">We supply highly quality organic products</p>
+          <button class="btn btn bg-[#F85559] md:mr-50 sm:mb-5 lg:ml-96 text-center border-none  sm:text-base text-white">Shop Now</button>
         </div>
       </div>
       <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -156,10 +158,10 @@
       <div class="max-auto w-full relative">
         <img src="./images/banner4.png" class=" w-full opacity-0." />
     
-        <div class="items-center absolute -mt-32 lg:-mt-60 lg:ml-96  lg:space-y-6">
+        <div class="items-center absolute -mt-32 ml-48 lg:-mt-28 lg:ml-72 lg:space-y-6">
           <h1 class="text-white text-center lg:font-extrabold lg:text-5xl lg:-mt-96 lg:ml-72">Exotic tastes at your <br> doorstep</h1>
-          <p class="text-center lg:font-medium lg:ml-40 text-white">We supply highly quality <br> organic products</p>
-            <button class="btn btn bg-[#F85559] lg:m-60 lg:ml-96 text-center border-none  lg:text-base text-white">Shop Now</button>
+          <p class="text-center sm:font-medium lg:ml-40 text-white">We supply highly quality organic products</p>
+          <button class="btn btn bg-[#F85559] md:mr-50 sm:mb-5 lg:ml-96 text-center border-none  sm:text-base text-white">Shop Now</button>
         </div>
       </div>
       <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -174,13 +176,13 @@
 
 
     <!-- main section start from here -->
-<main>
+<main class="container md:max-auto ">
 
-<section class="container">
+<section class="my-24">
 
-<div class="flex flex-col lg:flex-row items-center justify-around px-10 mx-auto">
+<div class="flex flex-col lg:flex-row items-center justify-around flex-1 ">
 
-<div class="justify-between flex-1">
+<div class="justify-between items-center">
 <h3 class="font-extrabold text-5xl">Deal of the day</h3>
 <p class="font-medium text-base mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, 
   making it over 2000 years old.</p>
@@ -188,7 +190,7 @@
 
 <!-- countdown section -->
 
-<div class="flex justify-end flex-1">
+<div class="flex justify-center items-center ">
   <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
     <div class="flex flex-col p-2  text-black-content">
       <span class="countdown font-medium text-5xl">
@@ -522,9 +524,9 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
 </main>
 
 <!-- footer section start from here -->
-<footer >
-
-<div class="footer footer-center py-24 bg-base-200 text-base-content rounded bg-black">
+<section>
+<footer class="">
+<div class="footer footer-center lg:h-[400px]  rounded bg-black">
   
   <div class=" gap-4 flex flex-col lg:flex-row items-center justify-center  flex-1">
     <img  src="./images/logo.png"/>
@@ -553,6 +555,6 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
   </div> 
  
 </footer>
-
+</section>
   </body>
 </html>
