@@ -21,7 +21,7 @@
             'nav-color':'#F85559',
             },
             backgroundImage: {
-              'banner1-png': "url(')",
+              'banner1-png': "url('./images/banner1.png')",
             },
           },
         },
@@ -54,8 +54,8 @@
  
   </head>
   <body class="font-family: 'Lato', sans-serif;">
-    <header class="container md:mx-auto my-5">
-    
+    <header class="max-w-screen-xl mx-auto lg:my-5">
+    <nav class="navbar bg-base-100">
        <div class="navbar bg-[#F85559] rounded-full ">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -103,17 +103,17 @@
 </nav>
 
     <!-- banner section start from here -->
-<section class="my-5">
-  <div class="carousel w-full ">
+<section class=" max-w-screen-xl mx-auto lg:my-5">
+  <div class="carousel w-full">
     <div id="slide1" class="carousel-item relative w-full">
      <!-- slide-1 -->
       <div class="max-auto w-full relative">
         <img src="./images/banner1.png" class=" w-full " />
     
         <div class="items-center absolute -mt-32 ml-48 lg:-mt-28 lg:ml-72  lg:space-y-6">
-          <h1 class="text-white text-center lg:font-extrabold lg:text-5xl lg:-mt-96 lg:ml-72">Exotic tastes at your <br> doorstep</h1>
+          <h1 class="text-white text-center text-base lg:font-extrabold lg:text-5xl lg:-mt-96 lg:ml-72">Exotic tastes at your <br> doorstep</h1>
           <p class="text-center sm:font-medium lg:ml-40 text-white">We supply highly quality organic products</p>
-            <button class="btn btn bg-[#F85559] md:mr-50 sm:mb-5 lg:ml-96 text-center border-none  sm:text-base text-white">Shop Now</button>
+            <button class="btn  bg-[#F85559] md:mr-50 mt-2 lg:ml-96 text-center border-none  text-base text-white">Shop Now</button>
         </div>
       </div>
 
@@ -200,9 +200,6 @@
 </div>
 
 
-
-
-
 </div>
 
 </section>
@@ -210,7 +207,7 @@
 
 
     <!-- main section start from here -->
-<main class="container md:max-auto ">
+<main class="max-w-screen-xl mx-auto ">
 
 <section class="my-24">
 
@@ -257,7 +254,7 @@
 
 
 <!-- Deal of the fruits items start from here -->
-<div class="my-24 mx-36 flex flex-col lg:flex-row items-center gap-6 justify-between">
+<div class="my-24 max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center gap-6 justify-between">
 <!-- Card-1 -->
 
   <div class="card  bg-base-100 shadow-xl p-12">
@@ -301,7 +298,7 @@
  
 
 <!-- Card-2 -->
-<div class="card bg-base-100 shadow-xl p-12 ">
+<div class="card bg-base-100 shadow-xl ">
   <figure><img src="./images/fruit7.png" alt="Shoes"/></figure>
   <div class="card-body items-center">
     <h2 class="text-black font-bold text-2xl">12.90$-18.85$</h2>
@@ -317,7 +314,7 @@
 <button class="btn btn text-[#F85559] p-4 " onclick="my_modal_2.showModal()">Details</button>
 <dialog id="my_modal_2" class="modal">
   <form method="dialog" class="modal-box">
-    <div class="card bg-base-100 shadow-xl p-12 ">
+    <div class="card bg-base-100 shadow-xl  ">
       <figure><img src="./images/fruit7.png" alt="Shoes"/></figure>
       <div class="card-body items-center">
         <h2 class="text-black font-bold text-2xl">12.90$-18.85$</h2>
@@ -339,7 +336,7 @@
   </div>
 </div >
 <!-- Card-3 -->
-<div class="card  bg-base-100 shadow-xl p-12">
+<div class="card  bg-base-100 shadow-xl ">
   <figure><img src="./images/fruit8.png" alt="Shoes"/></figure>
   <div class="card-body items-center">
     <h2 class="text-black font-bold text-2xl">12.90$-18.85$</h2>
@@ -427,7 +424,7 @@
 </section>
 
 <!-- Meet the team section -->
-<section class="my-24 p-20 lg:mx-36 "style="background-image: url('./images/banner1.png')">
+<section class="my-24 p-8 lg:mx-36 "style="background-image: url('./images/banner1.png')">
 <div class="text-center  justify-around space-y-5 ">
   <h2 class="lg:text-5xl font-extrabold text-white">Meet the team section</h2>
 <p class="text-base font-medium text-white mb-5">Contrary to popular belief,is not simply random text. 
@@ -435,7 +432,7 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
 </div>
 
 
-  <div class="flex flex-col justify-around items-center md:flex-col-2 lg:flex-row gap-3 lg:gap-5">
+  <div class="flex flex-col justify-around items-center  lg:flex-row gap-5">
     <!-- Card-no-1 -->
     <div>
       <img src="./images/member1.png" alt="">
@@ -558,8 +555,8 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
 </main>
 
 <!-- footer section start from here -->
-<section>
-<footer class=" ">
+
+<footer class="footer  bg-base-300 text-base-content ">
 <div class="footer footer-center lg:h-[400px] lg:-space-y-20 rounded py-16 bg-black">
   
   <div class=" gap-4 flex flex-col lg:flex-row items-center justify-center  flex-1">
@@ -576,19 +573,18 @@ It has roots in a piece of classical<br> Latin literature from 45 BC, making it 
   </div> 
   
     <div class="grid grid-cols-3 lg:grid-flow-col gap-4">
-      <a href=""><i class="fa-brands fa-twitter text-3xl text-white"></i></a>
-      <a href=""><i class="fa-brands fa-facebook text-3xl text-white"></i></a>
-      <a href=""><i class="fa-brands fa-youtube text-3xl text-white"></i></a>
-      <a href=""><i class="fa-brands fa-youtube text-3xl text-white"></i></a>
-      <a href=""><i class="fa-brands fa-instagram text-3xl text-white"></i></a>
-      <a href=""><i class="fa-brands fa-apple text-3xl text-white"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter text-3xl text-emerald-950"></i></a>
+      <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook text-3xl text-emerald-950"></i></a>
+      <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube text-3xl text-emerald-950"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram text-3xl text-emerald-950"></i></a>
+      <a href="https://www.apple.com/" target="_blank"><i class="fa-brands fa-apple text-3xl text-emerald-950"></i></a>
     </div>
     
-      <p class="text-3xl text-white flex-col"  >Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      <p class="text-3xl text-white flex-col">Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
     
   </div> 
  
 </footer>
-</section>
+
   </body>
 </html>
